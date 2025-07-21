@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, sans-serif;
+  background-color: white;
+}
+
+.encabezado {
+  background-color: #0047ab;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado img{
+  width: 40px;
+  height: 40px;
+}
