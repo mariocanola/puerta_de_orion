@@ -1,20 +1,68 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:'Segoe UI', Tahoma, sans-serif;
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: white;
+
 }
 
 .encabezado {
-  background-color: #0047ab;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #0047ab;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1000;
 }
 
-.encabezado img{
-  width: 40px;
-  height: 40px;
+.encabezado img {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: #f4d800;
+    user-select: none;
+    display: inline-block;
+}
+
+.menu-categorias {
+    display: none;
+    background-color: #f4d800;
+    border: 2px solid #0047ab;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 1000;
+    width: 200px;
+}
+
+.menu-categorias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-categorias li {
+    margin-bottom:5px;
+}
+
+.menu-categorias a {
+    text-decoration: none;
+    color: #0047ab;
+    font-weight: bold;
 }
