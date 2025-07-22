@@ -1,0 +1,100 @@
+<form class="formulario-datos" id="formulario-deportista" style="margin-top: 80px;">
+  <!-- Sección 1: Información Básica -->
+  <section class="seccion-formulario activa">
+    <h3>Información Básica</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Primer Nombre" required>
+      <input type="text" placeholder="Segundo Nombre">
+      <input type="text" placeholder="Primer Apellido" required>
+      <input type="text" placeholder="Segundo Apellido">
+    </div>
+    <div class="fila-formulario">
+      <input type="date" placeholder="Fecha de nacimiento" required>
+      <select required>
+        <option value="" disabled selected hidden>Género</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Tipo de documento</option>
+        <option>Cédula</option>
+        <option>Tarjeta de identidad</option>
+        <option>Pasaporte</option>
+      </select>
+      <input type="text" placeholder="Número de documento" required>
+    </div>
+    <div class="botones-formulario" style="justify-content: center; gap: 10px";> 
+      <button type="button" class="boton-perfil siguiente" style="width: 120px";>Siguiente</button>
+    </div>
+  </section>
+
+  <!-- Sección 2: Antecedentes Médicos -->
+  <section class="seccion-formulario">
+    <h3>Antecedentes Médicos</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Condiciones médicas">
+      <input type="text" placeholder="Medicamentos actuales">
+    </div>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Alergias">
+      <input type="text" placeholder="EPS o entidad de salud">
+    </div>
+    <div class="botones-formulario" style="justify-content: center; gap: 10px";> 
+      <button type="button" class="boton-perfil anterior" style="width: 120px"; >Anterior</button>
+      <button type="button" class="boton-perfil siguiente" style="width: 120px";>Siguiente</button>
+    </div>
+  </section>
+
+  <!-- Sección 3: Información Escolar -->
+  <section class="seccion-formulario">
+    <h3>Información Escolar</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Institución Educativa" required>
+      <input type="text" placeholder="Grado escolar" required>
+    </div>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Jornada">
+      <input type="text" placeholder="Municipio">
+    </div>
+    <div class="botones-formulario" style="justify-content: center; gap: 10px";> 
+      <button type="button" class="boton-perfil anterior" style="width: 120px"; >Anterior</button>
+      <button type="button" class="boton-perfil siguiente" style="width: 120px";>Siguiente</button>
+    </div>
+  </section>
+
+  <!-- Sección 4: Información Deportiva -->
+  <section class="seccion-formulario">
+    <h3>Información Deportiva</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Deporte que practica" required>
+      <input type="text" placeholder="Categoría">
+    </div>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Entrenador">
+      <input type="text" placeholder="Frecuencia de entrenamiento">
+    </div>
+    <div class="botones-formulario" style="justify-content: center; gap: 10px";> 
+      <button type="button" class="boton-perfil anterior" style="width: 120px"; >Anterior</button>
+      <button type="button" class="boton-perfil siguiente" style="width: 120px";>Siguiente</button>
+    </div>
+  </section>
+
+  <!-- Sección 5: Información del Acudiente -->
+  <section class="seccion-formulario">
+    <h3>Información del Acudiente</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Nombre completo del acudiente" required>
+      <input type="text" placeholder="Parentesco">
+    </div>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Teléfono de contacto" required>
+      <input type="email" placeholder="Correo electrónico del acudiente">
+    </div>
+    <div class="botones-formulario" style="justify-content: center; gap: 10px";> 
+      <button type="button" class="boton-perfil anterior" style="width: 120px"; >Anterior</button>
+    </div>
+  </section>
+</form>

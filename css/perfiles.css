@@ -5,11 +5,22 @@
     justify-content: center;
     padding: 20px;
     position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .tarjeta-perfil {
     width: 100%;
     max-width: 300px;
+    min-width: 300px;
     border: 3px solid #0047ab;
     background-color: #f4d800;
     text-align: center;
@@ -19,11 +30,6 @@
     z-index: 1;
     height: fit-content;
     align-self: flex-start;
-}
-
-.imagen-perfil {
-    background-color: #ffffff;
-    padding: 20px;
 }
 
 .imagen-usuario {
@@ -39,6 +45,61 @@
     border: 3px solid #0047ab;
 }
 
+.tarjeta-acudiente {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #0047ab;
+    background-color: #f4d800;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+.imagen-acudiente img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0047ab;
+    flex-shrink: 0;
+}
+
+.contenido-acudiente {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.contenido-acudiente input {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.boton-acudiente {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
 .contenido-perfil {
     padding: 20px;
 }
@@ -50,10 +111,11 @@
 .formulario-datos {
     background-color: #f4d800;
     border: 3px solid #0047ab;
-    padding: 20px;
+    padding: 30px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     box-sizing: border-box;
+    min-width: 500px;
 }
 
 .formulario-datos h3 {
@@ -80,11 +142,26 @@
 }
 
 .boton-perfil {
-  background-color: #0047ab;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
 }
+
+.seccion-formulario {
+    display: none;
+}
+
+.seccion-formulario.activa {
+    display: block;
+}
+
+.botones-formulario {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
