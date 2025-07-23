@@ -1,0 +1,72 @@
+.calendar-container {
+	border-radius: 1rem;
+	border: 3px solid #1d4ed8;
+	box-shadow: 0 4px 16px 0 rgba(30, 64, 175, 0.12);
+	padding: 2rem;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.calendar-header {
+	background: #fde047;
+	border-radius: 0.7rem;
+	padding: 1rem 2rem;
+	margin-bottom: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#calendar-title {
+	flex: 1;
+	text-align: center;
+	color: #1e293b;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 0.7rem;
+	width: 100%;
+}
+
+.calendar-grid > div {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#calendar-days div {
+	background: #f3f4f6;
+	border-radius: 0.4rem;
+	padding: 1.2rem 0.3rem; /* Más alto y un poco más ancho */
+	text-align: center;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s;
+	font-size: 1.2rem;
+	min-width: 70px; /* Aumenta el ancho mínimo */
+	word-break: break-word;
+}
+
+#calendar-days div:hover {
+	background: #dbeafe;
+}
+
+#calendar-days .hoy {
+	background: #bfdbfe;
+	color: #1e293b;
+	font-weight: bold;
+	box-shadow: 0 0 0 2px #1d4ed8;
+}
+
+#calendar-days .evento {
+	border: 2px solid #facc15;
+} 
