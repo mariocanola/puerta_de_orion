@@ -1,0 +1,57 @@
+.registro-datos {
+    background-color: #f4d800;
+    border: 8px solid #0047ab;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    min-width: 500px;
+}
+
+.registro-datos h3 {
+    background-color: #0047ab;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;
+}
+
+.fila-registro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.fila-registro input,
+.fila-registro select {
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.boton-registro {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.seccion-registro {
+    display: none;
+}
+
+.seccion-registro.activa {
+    display: block;
+}
+
+.botones-registro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+

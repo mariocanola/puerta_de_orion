@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = document.querySelector('.imagen-usuario img');
       if (img) {
         const imagenesPorRol = {
-          Aspirante: '../imgs/user.png',
-          Entrenador: '../imgs/user.png',
-          Administrador: '../imgs/user.png',
-          Acudiente: '../imgs/user.png',
-          Deportista: '../imgs/user.png'
+          Aspirante: '../imgs/user2.png',
+          Entrenador: '../imgs/user2.png',
+          Administrador: '../imgs/user2.png',
+          Acudiente: '../imgs/user2.png',
+          Deportista: '../imgs/user2.png'
         };
 
-        img.src = imagenesPorRol[rol] || '../imgs/image.png'; // default
+        img.src = imagenesPorRol[rol] || '../imgs/user2.png'; // default
       }
     });
 });
