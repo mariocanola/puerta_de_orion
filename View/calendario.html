@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendario UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/calendario.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+
+  <!-- Top Navbar -->
+  <header class="bg-gradient-to-r from-blue-900 to-blue-800 text-white flex justify-between items-center px-8 py-4 shadow-lg">
+      <div class="flex items-center gap-6">
+          <button class="bg-yellow-400 px-4 py-2 text-sm font-bold rounded-full shadow-lg hover:shadow-xl transition-shadow" onclick="window.location.href='categorias.html'">
+              Categoría 2
+            </button>
+            <div class="w-1.5 h-8 bg-yellow-400"></div>
+        </div>
+    <img src="../imgs/logo.png" alt="text" class="h-12 mr-2">
+
+    <button class="flex items-center gap-6 bg-blue-800 hover:bg-blue-700 rounded-xl shadow-lg hover:shadow-xl transition-shadow" onclick="window.location.href='perfil.html'">
+        <div class="w-1.5 h-8 bg-yellow-400"></div>
+        <img src="../imgs/user.png" alt="text" class="w-8 h-8">
+    </button>
+  </header> 
+
+  <br>  
+  <div class="flex justify-center">
+    <div class="flex gap-6 items-center">
+      <button class="bg-blue-800 hover:bg-blue-700 px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow" onclick="window.location.href='eventos.html'">
+        Crear Evento
+      </button>
+      <button class="bg-blue-800 hover:bg-blue-700 px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow" onclick="window.location.href='registro.html'">
+        Crear Cuenta
+      </button>
+      <button class="bg-blue-800 hover:bg-blue-700 px-8 py-4 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow" onclick="window.location.href='iniciar-sesion.html'">
+        Iniciar Sesión
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="p-12">
+    <h1 class="text-5xl font-bold text-center mb-12 text-gray-800">
+      Calendario
+    </h1>
+
+    <!-- Calendar Container -->
+    <div class="calendar-container bg-white rounded-3xl shadow-2xl p-12 border-4 border-blue-700 flex flex-col items-center">
+      <!-- Calendar Header -->
+      <div class="calendar-header flex justify-between items-center rounded-xl bg-yellow-400 px-8 py-4 w-full mb-6">
+        <button class="text-blue-700 hover:text-blue-900 transition-colors bg-transparent" id="prev-month">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <span class="text-blue-900 font-bold text-2xl text-center w-full" id="calendar-title">March 2025</span>
+        <button class="text-blue-700 hover:text-blue-900 transition-colors bg-transparent" id="next-month">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Calendar Grid: nombres de los días -->
+      <div class="calendar-grid w-full">
+        <div class="font-bold text-gray-700 text-xl text-center">Su</div>
+        <div class="font-bold text-gray-700 text-xl text-center">Mo</div>
+        <div class="font-bold text-gray-700 text-xl text-center">Tu</div>
+        <div class="font-bold text-gray-700 text-xl text-center">We</div>
+        <div class="font-bold text-gray-700 text-xl text-center">Th</div>
+        <div class="font-bold text-gray-700 text-xl text-center">Fr</div>
+        <div class="font-bold text-gray-700 text-xl text-center">Sa</div>
+      </div>
+      <!-- Grid de días del mes -->
+      <div id="calendar-days" class="grid grid-cols-7 gap-2 mt-4 w-full"></div>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../JS/calendario.js"></script>
+</body>
+</html>
