@@ -6,6 +6,10 @@
   height: calc(100vh - 50px);
 }
 
+.contenedor-formulario img {
+  width: 150px;
+}
+
 .formulario {
   background-color: #f4d800;
   border: 4px solid #0047ab;
