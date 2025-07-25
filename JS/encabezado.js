@@ -37,34 +37,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const opcionesPorRol = {
         Aspirante: [
-          { texto: 'Inicio', link: '#' },
-          { texto: 'Inscribirse', link: '#' },
+          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Inscribirse', link: '#', icono: 'fas fa-file-signature' },
         ],
         Entrenador: [
-          { texto: 'Inicio', link: '#' },
-          { texto: 'Deportistas', link: '#' },
+          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Deportistas', link: '#', icono: 'fas fa-users' },
         ],
         Acudiente: [
-          { texto: 'Inicio', link: '#' },
-          { texto: 'Mensualidades', link: '#' }
+          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
         ],
         Deportista: [
-          { texto: 'Inicio', link: '#' },
-          { texto: 'Mensualidades', link: '#' }
+          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
         ],
         Admin: [
-          { texto: 'Inicio', link: '#' },
-          { texto: 'Deportistas', link: '#' },
-          { texto: 'Mensualidades', link: '#' }
+          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Deportistas', link: '#', icono: 'fas fa-users' },
+          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
         ]
       };
+
 
       const opciones = opcionesPorRol[rol] || [{ texto: 'Inicio', link: '#' }];
       opciones.forEach(op => {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = op.link;
-        a.textContent = op.texto;
+
+        const icono = document.createElement('i');
+        icono.className = op.icono + ' icono-menu'; // Puedes agregar una clase adicional si quieres estilo
+
+        a.appendChild(icono);
+        a.append(' ' + op.texto); // Espacio entre el ícono y el texto
+
         li.appendChild(a);
         menuOpciones.appendChild(li);
       });
