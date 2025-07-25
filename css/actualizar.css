@@ -1,0 +1,82 @@
+.contenido-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.boton-actualizar2 {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.formulario-actualizar {
+    background-color: #f4d800;
+    border: 3px solid #0047ab;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    min-width: 500px;
+}
+
+.formulario-actualizar h3 {
+    background-color: #0047ab;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;
+}
+
+.fila-actualizar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.fila-actualizar input,
+.fila-actualizar select {
+    padding: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 12px;
+}
+
+.botones-acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.boton-actualizar {
+  background-color: #0047ab;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  width: auto; 
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  flex: 1; 
+  max-width: 150px;
+}

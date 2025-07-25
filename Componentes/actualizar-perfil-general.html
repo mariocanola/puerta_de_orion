@@ -1,0 +1,53 @@
+<form class="formulario-actualizar">
+    <h3>Actualizar perfil</h3>
+
+    <div class="fila-actualizar">
+        <input type="text" placeholder="Ingrese su primer nombre">
+        <input type="text" placeholder="Ingrese su segundo nombre">
+        <input type="text" placeholder="Ingrese su primer apellido">
+        <input type="text" placeholder="Ingrese su segundo apellido">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-actualizar">
+        <input type="date" id="fecha-nacimiento" name="fecha">
+        <select>
+            <option value="" disabled selected hidden>Ingrese su género</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-actualizar">
+        <select>
+            <option value="" disabled selected hidden>Ingrese su tipo de documento</option>
+            <option value="cc">Cédula de ciudadanía</option>
+            <option value="ti">Tarjeta de identidad</option>
+            <option value="ce">Cédula de extranjería</option>
+            <option value="pasaporte">Pasaporte</option>
+        </select>
+        <input type="text" placeholder="Ingrese su número de documento">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-actualizar">
+        <input type="text" placeholder="Ingrese su correo electrónico">
+        <input type="text" placeholder="Ingrese su número telefónico">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-actualizar" style="display: flex; justify-content: center;">
+        <input type="text" style="width: 350px;" placeholder="Ingrese su nueva contraseña">
+        <input type="text" style="width: 350px;" placeholder="Confirme su nueva contraseña">
+    </div>
+
+    <div class="botones-acciones">
+        <button class="boton-actualizar">Aceptar actualización</button>
+        <button class="boton-actualizar">Cancelar actualización</button>
+    </div>
+</form>
