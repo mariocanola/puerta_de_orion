@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const contenedor = document.getElementById("contenedor-formulario");
+  const contenedor = document.getElementById("registro-deportista");
 
   // Cargar el HTML del formulario
-  fetch("../Componentes/formulario-deportista.html")
+  fetch("../Componentes/registro-deportista.html")
     .then(response => {
       if (!response.ok) {
         throw new Error("No se pudo cargar el formulario del deportista.");
