@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Club Puerta de Orión - Galería</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="../css/inicio.css" />
+</head>
+
+<body data-rol="Admin">
+	<main class="contenedor-principal">
+		<!-- Filtros superiores -->
+		<div class="seccion-filtros">
+			<select id="filtro-categoria" class="form-select filtro-select">
+				<option value="">Todas las categorías</option>
+				<option value="Sub-13">Sub-13</option>
+				<option value="Sub-15">Sub-15</option>
+				<option value="Sub-17">Sub-17</option>
+			</select>
+			<input type="text" id="filtro-nombre" class="form-control filtro-input" placeholder="Buscar por nombre...">
+		</div>
+
+		<!-- Heading principal -->
+		<h1 class="heading-principal">Galería de Deportistas</h1>
+
+		<!-- Sección de contenido con cuadrícula -->
+		<div class="seccion-contenido grande">
+			<div class="cuadricula-tarjetas">
+				<div class="tarjeta deportista" data-nombre="Juan Pérez" data-categoria="Sub-15">
+					<img src="../imgs/user.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Juan Pérez</div>
+					<div class="categoria">Sub-15</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Carlos Ruiz" data-categoria="Sub-17">
+					<img src="../imgs/user2.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Carlos Ruiz</div>
+					<div class="categoria">Sub-17</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Ana Gómez" data-categoria="Sub-13">
+					<img src="../imgs/user.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Ana Gómez</div>
+					<div class="categoria">Sub-13</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="María López" data-categoria="Sub-15">
+					<img src="../imgs/user2.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">María López</div>
+					<div class="categoria">Sub-15</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Pedro Torres" data-categoria="Sub-17">
+					<img src="../imgs/user.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Pedro Torres</div>
+					<div class="categoria">Sub-17</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Laura Díaz" data-categoria="Sub-13">
+					<img src="../imgs/user2.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Laura Díaz</div>
+					<div class="categoria">Sub-13</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Sofía Ramírez" data-categoria="Sub-15">
+					<img src="../imgs/user.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Sofía Ramírez</div>
+					<div class="categoria">Sub-15</div>
+				</div>
+				<div class="tarjeta deportista" data-nombre="Miguel Ángel" data-categoria="Sub-17">
+					<img src="../imgs/user2.png" alt="Perfil" class="foto-perfil">
+					<div class="nombre">Miguel Ángel</div>
+					<div class="categoria">Sub-17</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script defer src="../JS/encabezado.js"></script>
+	<script defer src="../JS/inicio.js"></script>
+	<script defer src="../JS/galeria-filtros.js"></script>
+</body>
+
+</html> 
