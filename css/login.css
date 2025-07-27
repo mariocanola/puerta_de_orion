@@ -38,11 +38,16 @@
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px 20px;
   margin-bottom: 15px;
-  border: 1px solid black;
-  border-radius: 3px;
+  padding: 12px 14px;
+  border: 2px solid #0047ab;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-width: 100px;
 }
 
 button {
@@ -56,5 +61,5 @@ button {
 }
 
 button:hover {
-  background-color: #003080;
+  background-color: #002e6d;
 }

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('../Componentes/tarjeta-perfil.html')
+  fetch('../Componentes/tarjeta-perfil-actualizar.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('contenedor-tarjeta-perfil').innerHTML = html;
@@ -15,14 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = document.querySelector('.imagen-usuario img');
       if (img) {
         const imagenesPorRol = {
-          Aspirante: '../imgs/perfil.png',
-          Entrenador: '../imgs/perfil.png',
-          Administrador: '../imgs/perfil.png',
-          Acudiente: '../imgs/perfil.png',
-          Deportista: '../imgs/perfil.png'
+          Aspirante: '../imgs/perfil-actualziar.png',
+          Entrenador: '../imgs/perfil-actualizar.png',
+          Administrador: '../imgs/perfil-actualizar.png',
+          Acudiente: '../imgs/perfil-actualizar.png',
+          Deportista: '../imgs/perfil-actualizar.png'
         };
 
-        img.src = imagenesPorRol[rol] || '../imgs/perfil.png'; // default
+        img.src = imagenesPorRol[rol] || '../imgs/perfil-actualizar.png'; // default
       }
     });
 });
