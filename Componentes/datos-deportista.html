@@ -1,0 +1,221 @@
+<form class="formulario-datos">
+  <!-- Sección 1: Información Básica -->
+  <section class="seccion-formulario activa">
+    <h3>Perfil</h3>
+
+    <div class="fila-formulario">
+      <input type="text" placeholder="Primer nombre" required>
+      <input type="text" placeholder="Segundo nombre">
+      <input type="text" placeholder="Primer apellido?" required>
+      <input type="text" placeholder="Segundo apellido?">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Tipo de documento</option>
+        <option>Cédula</option>
+        <option>Tarjeta de identidad</option>
+        <option>Pasaporte</option>
+      </select>
+      <input type="text" placeholder="Número de documento" required>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <input type="date" placeholder="Fecha de nacimiento" required>
+      <select required>
+        <option value="" disabled selected hidden>Género</option>
+        <option>Masculino</option>
+        <option>Femenino</option>
+      </select>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <input type="text" placeholder="Correo electrónico">
+      <input type="text" placeholder="Número telefónico">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Ciudad de residencia</option>
+        <option>Retorno</option>
+        <option>San Jose</option>
+        <option>Otro</option>
+      </select>
+      <input type="text" placeholder="Dirección de residencia">
+    </div>
+
+    <hr class="form-divider">
+
+    <div>
+      <div class="fila-formulario">
+        <input type="text" placeholder="Contraseña">
+      </div>
+
+      <hr class="form-divider">
+
+      <div class="botones-formulario" style="justify-content: center; gap: 10px" ;>
+        <button type="button" class="boton-formulario siguiente" style="width: 120px" ;>Siguiente</button>
+      </div>
+
+      <hr class="form-divider">
+  </section>
+
+  <!-- Sección 2: Antecedentes Médicos -->
+  <section class="seccion-formulario">
+    <h3>Antecedentes Médicos</h3>
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>¿A que EPS está afiliado?</option>
+        <option>Nueva EPS</option>
+        <option>PONAL</option>
+        <option>Otro</option>
+      </select>
+    </div>
+
+    <hr class="form-divider">
+
+      <div class="bloque-radio">
+        <label for="recomendacion-medica-texto">Recomendación medica:</label>
+        <textarea id="recomendacion-medica-texto" placeholder="Escriba aquí..."></textarea>
+      </div>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Grupo sanguíneo</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>Otro</option>
+      </select>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="botones-formulario" style="justify-content: center; gap: 10px" ;>
+      <button type="button" class="boton-formulario anterior" style="width: 120px" ;>Anterior</button>
+      <button type="button" class="boton-formulario siguiente" style="width: 120px" ;>Siguiente</button>
+    </div>
+
+    <hr class="form-divider">
+
+  </section>
+
+  <!-- Sección 3: Información Escolar -->
+  <section class="seccion-formulario">
+    <h3>Información Escolar</h3>
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Institución educativa actual</option>
+        <option>SENA</option>
+        <option>SANTANDER</option>
+        <option>Otro</option>
+      </select>
+      <input type="text" placeholder="Jornada de estudio">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="botones-formulario" style="justify-content: center; gap: 10px" ;>
+      <button type="button" class="boton-formulario anterior" style="width: 120px" ;>Anterior</button>
+      <button type="button" class="boton-formulario siguiente" style="width: 120px" ;>Siguiente</button>
+    </div>
+
+    <hr class="form-divider">
+
+  </section>
+
+  <!-- Sección 4: Información Deportiva -->
+  <section class="seccion-formulario">
+    <h3>Información Deportiva</h3>
+      <div class="bloque-radio">
+        <label for="deporte-texto">Otros deportes practicados</label>
+        <textarea id="deporte-texto" placeholder="Escriba aquí..."></textarea>
+      </div>
+
+    <hr class="form-divider">
+
+      <div class="bloque-radio">
+        <label for="escuela-texto">Escuela en las que ha particiado</label>
+        <textarea id="escuela-texto" placeholder="Escriba aquí..."></textarea>
+      </div>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="botones-formulario" style="justify-content: center; gap: 10px" ;>
+      <button type="button" class="boton-formulario anterior" style="width: 120px" ;>Anterior</button>
+      <button type="button" class="boton-formulario siguiente" style="width: 120px" ;>Siguiente</button>
+    </div>
+
+    <hr class="form-divider">
+
+  </section>
+
+  <!-- Sección 5: Información del Acudiente -->
+  <section class="seccion-formulario">
+    <h3>Información del Acudiente</h3>
+    <div class="fila-formulario">
+      <input type="text" placeholder="Primer nombre de su acudiente" required>
+      <input type="text" placeholder="Segundo nombre de su acudiente">
+      <input type="text" placeholder="Primer apellido de su acudiente" required>
+      <input type="text" placeholder="Segundo apellido de su acudiente">
+
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario fila-centro">
+      <select required>
+        <option value="" disabled selected hidden>Parentesco</option>
+        <option>Padre</option>
+        <option>Madre</option>
+        <option>Hermano</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <input type="date" placeholder="Fecha de nacimiento su acudiente" required>
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <select required>
+        <option value="" disabled selected hidden>Tipo de documento de su acudiente</option>
+        <option>Cédula</option>
+        <option>Contraseña</option>
+        <option>Pasaporte</option>
+      </select>
+      <input type="text" placeholder="Número de documento de su acudiente" required>
+
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="fila-formulario">
+      <input type="text" placeholder="Correo electrónico de su acudiente">
+      <input type="text" placeholder="Número telefónico de su acudiente">
+    </div>
+
+    <hr class="form-divider">
+
+    <div class="botones-formulario" style="justify-content: center; gap: 10px" ;>
+      <button type="button" class="boton-formulario anterior" style="width: 120px" ;>Anterior</button>
+      <button type="button" class="boton-formulario" style="width: 120px" ;>Actualizar</button>
+    </div>
+
+    <hr class="form-divider">
+  </section>
+</form>
