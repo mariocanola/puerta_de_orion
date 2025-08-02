@@ -13,11 +13,12 @@
 
 <body data-sin-menu>
   <main class="contenedor-formulario">
-    <form class="formulario">
+    <form class="formulario" id="login-form">
       <img src="../imgs/icono.png" alt="text" class="icono-formulario">
       <label class="etiqueta-formulario">Inicio de Sesión</label>
-      <input type="text" placeholder="Correo">
-      <input type="text" placeholder="Contraseña">
+      <div id="error-message" class="alert alert-danger d-none" role="alert"></div>
+      <input type="email" id="email" placeholder="Correo" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
       <button type="submit">Iniciar sesión</button>
       <div class="text-center mt-3">
         <p>¿No tienes una cuenta? <a href="registro_general.html" class="text-primary fw-bold">Regístrate aquí</a></p>
@@ -26,6 +27,7 @@
   </main>
 
   <script defer src="../js/encabezado.js"></script>
+  <script defer src="../js/login.js"></script>
   
 </body>
 
