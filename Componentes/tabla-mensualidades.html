@@ -1,0 +1,51 @@
+<main class="tabla-mensualidades">
+    <div class="contenedor">
+
+        <div class="titulo">
+            <h1>Mensualidades</h1>
+        </div>
+
+        <div class="contenido-principal">
+            <div class="secciones">
+
+                <div class="filtro">
+                    <h2 class="subtitulo">Filtrar Deportistas</h2>
+                    <input type="text" placeholder="Nombre del deportista" class="input">
+                    <textarea placeholder="Comentarios..." rows="5" class="textarea"></textarea>
+                </div>
+
+                <div class="historial">
+                    <div class="caja-historial">
+                        <h2 class="subtitulo">Historial de Pagos</h2>
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Mes</th>
+                                    <th>Valor</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-mensualidades">
+                                <tr onclick="mostrarPopup(event, 'Juan Pérez', 'Julio', '$80.000', 'Pagado')">
+                                    <td>Nombre</td>
+                                    <td>Mes</td>
+                                    <td>$Valor</td>
+                                    <td class="estado-pagado">Pagado</td>
+                                </tr>
+                                <tr onclick="mostrarPopup(event, 'Ana Gómez', 'Julio', '$80.000', 'Pendiente')">
+                                    <td>Nombre</td>
+                                    <td>Mes</td>
+                                    <td>$Valor</td>
+                                    <td class="estado-pendiente">Pendiente</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
