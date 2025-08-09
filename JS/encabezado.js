@@ -37,25 +37,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const opcionesPorRol = {
         Aspirante: [
-          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
+          { texto: 'Inicio', link: '../View/inicio.html', icono: 'fas fa-home' },
+          { texto: 'Perfil', link: '../View/perfil_aspirante.html', icono: 'fas fa-user' },
           { texto: 'Inscribirse', link: '#', icono: 'fas fa-file-signature' },
         ],
         Entrenador: [
-          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
-          { texto: 'Deportistas', link: '#', icono: 'fas fa-users' },
+          { texto: 'Inicio', link: '../View/inicio.html', icono: 'fas fa-home' },
+          { texto: 'Perfil', link: '../View/perfil_entrenador.html', icono: 'fas fa-user' },
+          { texto: 'Deportistas', link: '../View/tabla-deportistas.html', icono: 'fas fa-users' },
         ],
         Acudiente: [
-          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
-          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
+          { texto: 'Inicio', link: '../View/inicio.html', icono: 'fas fa-home' },
+          { texto: 'Perfil', link: '../View/perfil_acudiente.html', icono: 'fas fa-user' },
+          { texto: 'Mensualidades', link: '../View/mensualidades_deportista.html', icono: 'fas fa-wallet' },
         ],
         Deportista: [
-          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
-          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
+          { texto: 'Inicio', link: '../View/inicio.html', icono: 'fas fa-home' },
+          { texto: 'Perfil', link: '../View/perfil_deportista.html', icono: 'fas fa-user' },
+          { texto: 'Mensualidades', link: '../View/mensualidades_deportista.html', icono: 'fas fa-wallet' },
         ],
         Admin: [
-          { texto: 'Inicio', link: '#', icono: 'fas fa-home' },
-          { texto: 'Deportistas', link: '#', icono: 'fas fa-users' },
-          { texto: 'Mensualidades', link: '#', icono: 'fas fa-wallet' },
+          { texto: 'Inicio', link: '../View/inicio.html', icono: 'fas fa-home' },
+          { texto: 'Perfil', link: '../View/perfil_admin.html', icono: 'fas fa-user' },
+          { texto: 'Deportistas', link: '../View/tabla-deportistas-admin.html', icono: 'fas fa-users' },
+          { texto: 'Mensualidades', link: '../View/tabla-mensualidades.html', icono: 'fas fa-wallet' },
         ]
       };
 

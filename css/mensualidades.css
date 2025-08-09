@@ -1,72 +1,132 @@
 body {
-  scroll-behavior: smooth;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0047ab;
 }
 
-header {
-  background-color: #0033a0;
-  color: white;
+.tabla-mensualidades {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  justify-content: center;
+  padding: 2rem;
 }
 
-header .logo {
-  font-weight: bold;
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #0047ab;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-nav {
-  background-color: #ffc107;
-  padding: 10px;
-}
-
-.container {
-  display: flex;
-  height: calc(100vh - 80px);
-}
-
-.sidebar {
+.busqueda {
   width: 25%;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-right: 2px solid #0033a0;
+  padding: 0.5rem 1rem;
+  background-color: #f4d800;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-.main-content {
-  flex: 1;
-  padding: 20px;
-  background-color: #e8eaf6;
-  position: relative;
+.titulo {
+  flex-grow: 2;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-table {
+.contenido-principal {
+  background-color: #f4d800;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.secciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+.filtro {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0047ab;
+  width: 50%;
+  max-width: 40%;
+}
+
+.historial {
+  width: 100%;
+  max-width: 55%;
+  background-color: #0047ab;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.caja-historial {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid #0047ab;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subtitulo {
+  color: #0047ab;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  resize: none;
+}
+
+.tabla {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-}
-
-th, td {
-  border: 1px solid #0033a0;
-  padding: 8px;
   text-align: center;
 }
 
-.popup {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border: 2px solid #ffc107;
-  background-color: white;
-  padding: 10px;
-  width: 200px;
-  display: none;
+.tabla thead {
+  background-color: #0047ab;
+  color: white;
 }
 
-button {
-  background-color: #0033a0;
-  color: white;
-  border: none;
-  padding: 10px;
-  margin-top: 10px;
-  cursor: pointer;
+.tabla th,
+.tabla td {
+  padding: 0.75rem;
+  border: 1px solid #0047ab;
+}
+
+.tabla tbody tr {
+  cursor: pointer;
+}
+
+.tabla tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.estado-pagado {
+  color: green;
+  font-weight: bold;
+}
+
+.estado-pendiente {
+  color: red;
+  font-weight: bold;
 }

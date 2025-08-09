@@ -1,6 +1,6 @@
 .calendar-container {
 	border-radius: 1rem;
-	border: 3px solid #1d4ed8;
+	border: 3px solid #0047ab;
 	box-shadow: 0 4px 16px 0 rgba(30, 64, 175, 0.12);
 	padding: 2rem;
 	background: #fff;
@@ -13,7 +13,7 @@
 }
 
 .calendar-header {
-	background: #fde047;
+	background: #f4d800;
 	border-radius: 0.7rem;
 	padding: 1rem 2rem;
 	margin-bottom: 1.5rem;

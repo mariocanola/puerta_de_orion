@@ -42,13 +42,15 @@ body {
 .menu-categorias {
     display: none;
     background-color: #f4d800;
-    border: 2px solid #0047ab;
+    border: 2px solid #f4d800;
     padding: 10px;
     position: absolute;
     top: 60px;
     left: 10px;
     z-index: 1000;
-    width: 200px;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
 }
 
 
@@ -85,4 +87,38 @@ body {
 
 .icono-menu {
   margin-right: 8px;
+}
+
+.titulo-club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.bloque {
+  padding: 18px 32px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  border: none;
+}
+
+.bloque-amarillo {
+  background-color: #f7d600;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -5px;
+  transform: translateX(-50px);
+}
+
+.bloque-azul {
+  background-color: #0d47a1;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transform: translateX(40px);
 }

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = document.querySelector('.imagen-usuario img');
       if (img) {
         const imagenesPorRol = {
-          Aspirante: '../imgs/perfil-actualziar.png',
+          Aspirante: '../imgs/perfil-actualizar.png',
           Entrenador: '../imgs/perfil-actualizar.png',
           Administrador: '../imgs/perfil-actualizar.png',
           Acudiente: '../imgs/perfil-actualizar.png',
